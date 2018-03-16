@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.mgo.HomePage"
+    tools:layout_editor_absoluteY="81dp">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="331dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="372dp"
+        android:layout_height="428dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="11dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="50dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="onFABclick"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/pen" />
+
+
+</android.support.constraint.ConstraintLayout>

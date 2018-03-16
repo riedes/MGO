@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+android:gravity="center_vertical|center_horizontal"
+android:background="@drawable/mgos"
+android:onClick="onSplashPageClick"
+tools:context="com.project.mgo.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Tap anywhere to continue"
+        android:textColor="#A46FA6"
+        android:paddingTop="400dp" />
+
+
+</LinearLayout>
+
