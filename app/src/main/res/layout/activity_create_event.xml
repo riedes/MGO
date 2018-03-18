@@ -21,28 +21,29 @@
 
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/contact"
         android:layout_width="278dp"
         android:layout_height="56dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Name or Number"
+        android:hint="Contact Number"
         android:inputType="textPersonName"
         android:padding="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />git
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/addContact"
         android:layout_width="53dp"
         android:layout_height="52dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="21dp"
         android:layout_marginTop="16dp"
         android:padding="16dp"
+        android:onClick="callContacts"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toEndOf="@+id/contact"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/account" />
 
@@ -50,44 +51,45 @@
         android:id="@+id/tvDate"
         android:layout_width="170dp"
         android:layout_height="47dp"
+        android:layout_marginEnd="22dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="19dp"
         android:ems="10"
         android:hint=" Select Date"
+        app:layout_constraintEnd_toStartOf="@+id/tvTime"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/contact" />
 
     <EditText
         android:id="@+id/tvTime"
         android:layout_width="160dp"
         android:layout_height="47dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="19dp"
         android:ems="10"
         android:hint=" Select time"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintStart_toEndOf="@+id/tvDate"
+        app:layout_constraintTop_toBottomOf="@+id/contact" />
 
     <EditText
         android:id="@+id/editText4"
-        android:layout_width="343dp"
-        android:layout_height="55dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="14dp"
+        android:layout_width="349dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginTop="23dp"
         android:ems="10"
         android:hint="Event Title: "
         android:inputType="textMultiLine"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDate" />
 
     <EditText
         android:id="@+id/editText5"
         android:layout_width="341dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="21dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
@@ -109,6 +111,8 @@
         android:onClick="onCancel"
         android:padding="16dp"
         android:text="Cancel"
+        android:background="@color/colorAccent"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button3" />
